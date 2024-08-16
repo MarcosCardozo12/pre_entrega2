@@ -2,3 +2,7 @@
 *.sh text eol=lf
 *.css text eol=lf
 *.json text eol=lf
+dos2unix css/styles.css
+*.md text
+*.css text
+*.py text
