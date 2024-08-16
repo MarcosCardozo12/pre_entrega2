@@ -5,13 +5,15 @@ header {
     z-index: 2;
     background-color: #fff;
 
-    h1 {
+        h1 {
         header h1 {
             color: black;
             font-size: 60px;
             font-weight: 900;
-
+            font-weight: $Fontws;
         }
+        
+        
     }
 
     nav {
@@ -277,9 +279,11 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    .sizes p {
+
+    . p {
         font-size: 14px;
-        .sizes p span {
+
+        . p span {
             font-weight: 700;
         }
     }
@@ -287,122 +291,232 @@ header {
 
 
 
-.btn-size{
-border: 1px solid #cbd5e1;
-padding: 10px;
-border-radius: 15px;
-font-family: inherit;
-background-color: #fff;
-font-size: 16px;
-font-weight: 700;
+.btn-size {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: inherit;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 700;
     cursor: pointer;
 }
 
-.btn-size.selected{
-background-color: #0284c7;
-color: #fff;
+.btn-size.selected {
+    background-color: #0284c7;
+    color: #fff;
 }
 
-.quantity{
-display: flex;
-flex-direction:  column;
-gap: 40px;
+.quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.container-add-quantity{
-display: flex;
-align-items: center;
-gap: 15px;
+.container-add-quantity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.add-quantity{
-background-color: #f5f8fb;
-padding: 12px;
-flex: 1.2;
-border-radius: 50px;
-display: flex;
-align-items: center;
-justify-content: space-between;
+.add-quantity {
+    background-color: #f5f8fb;
+    padding: 12px;
+    flex: 1.2;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .add-quantity .btn-minus,
-.add-quantity .btn-plus{
-outline: none;
-border: 1px solid #cbd5e1;
-display: flex;
-align-items: center;
-border-radius: 50%;
-cursor: pointer;
-padding: 12px;
-color: rgb(15, 23, 42);
-background-color: #fff;
+.add-quantity .btn-plus {
+    outline: none;
+    border: 1px solid #cbd5e1;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 12px;
+    color: rgb(15, 23, 42);
+    background-color: #fff;
 }
 
-.btn-minus:disabled{
-border: 1px solid #bec2c8;
-cursor: auto;
-color: #bec2c8;
+.btn-minus:disabled {
+    border: 1px solid #bec2c8;
+    cursor: auto;
+    color: #bec2c8;
 }
 
 .btn-minus:hover,
-.btn-plus:hover{
-border: 1px solid #000;
+.btn-plus:hover {
+    border: 1px solid #000;
 }
 
-.btn-minus:hover:disabled{
-border: 1px solid #bec2c8;
+.btn-minus:hover:disabled {
+    border: 1px solid #bec2c8;
 }
 
-.btn-add-to-cart{
-flex: 2;
-border: none;
-outline: none;
-border-radius: 500px;
-font-family: inherit;
-background-color: #0f172a;
-color: #fff;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 15px;
-font-size: 16px;
-font-weight: 500;
-cursor: pointer;
-box-shadow: 0 10px 15px hsla(0, 0%, 0%, 0.726);
-align-self: stretch;
+.btn-add-to-cart {
+    flex: 2;
+    border: none;
+    outline: none;
+    border-radius: 500px;
+    font-family: inherit;
+    background-color: #0f172a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 10px 15px hsla(0, 0%, 0%, 0.726);
+    align-self: stretch;
 }
 
-.btn-add-to-cart:hover{
-opacity: .95;
+.btn-add-to-cart:hover {
+    opacity: .95;
 }
 
-.btn-add-to-cart:active{
-outline: 3px solid #0284c7;
+.btn-add-to-cart:active {
+    outline: 3px solid #0284c7;
 }
 
-.info-quantity{
-display: flex;
-justify-content: space-between;
-color: #475569;
-font-size: 16px;
+.info-quantity {
+    display: flex;
+    justify-content: space-between;
+    color: #475569;
+    font-size: 16px;
 }
 
-.price-tax{
-display: flex;
-flex-direction: column;
-gap: 10px;
+.price-tax {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.info-quantity .value{
-display: flex;
-flex-direction: column;
-gap: 10px;
-text-align: right;
+.info-quantity .value {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
 }
 
-.total{
-display: flex;
-justify-content: space-between;
-padding: 16px 0;
-border-top: 1px solid #e1e1e1;
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-top: 1px solid #e1e1e1;
 }
+
+$banner-height: 60vh;
+$banner-height-mobile: 50vh;
+$banner-bg-image: url('file:///C:/Users/i3%20compu%20house/Downloads/NATMC.png');
+$banner-bg-color: rgba(0, 0, 0, 0.5);
+$btn-bg-color: #ff6347;
+$btn-bg-color-hover: #ff4500;
+
+
+.banner {
+    background-image: $banner-bg-image;
+    background-size: cover;
+    background-position: center;
+    height: $banner-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $banner-bg-color;
+        z-index: 1;
+    }
+
+    .banner-content {
+        z-index: 2;
+        padding: 0 20px;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.btn-banner {
+    padding: 10px 20px;
+    background-color: $btn-bg-color;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $btn-bg-color-hover;
+    }
+}
+
+
+.content {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+// Media Queries
+@media (max-width: 768px) {
+    .banner {
+        .banner-content {
+            h1 {
+                font-size: 2.5rem;
+            }
+        
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        .btn-banner {
+            font-size: 1rem;
+            padding: 8px 16px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: $banner-height-mobile;
+
+        .banner-content {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .btn-banner {
+            font-size: 0.9rem;
+            padding: 7px 14px;
+        }
+    }
+}
+
