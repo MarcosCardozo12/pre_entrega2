@@ -573,7 +573,6 @@ header nav ul {
     border-top: 1px solid #e1e1e1;
 }
 
-/*PRODUCTOS RELACIONADOS*/
 
 .container-productos-relacionados {
     display: flex;
@@ -717,9 +716,6 @@ header nav ul {
     font-weight: 700;
 }
 
-/*FOOTER*/
-
-
 footer {
     border-top: 1px solid #e1e1e1;
     padding: 100px 0 90px;
@@ -793,7 +789,6 @@ footer {
     }
 
     .banner {
-        background-image: url('file:///C:/Users/i3%20compu%20house/Downloads/NATMC.png'); 
         background-size: cover;  
         background-position: center; 
         height: 60vh; 
@@ -853,7 +848,6 @@ footer {
         text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
     }
     
-    /* Media Queries para dispositivos más pequeños */
     
     
     @media (max-width: 768px) {
